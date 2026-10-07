@@ -1323,3 +1323,15 @@ body{
 @media(prefers-reduced-motion:reduce){
   #koerbe .korb-card,.evo-paths a{transition:none}
 }
+
+
+/* Final Evolution compatibility guard against legacy hero grid */
+.evo-home .evo-home-wrap{
+  display:block!important;
+  grid-template-columns:none!important;
+  gap:0!important;
+}
+.evo-home .evo-home-wrap>.evo-hero-grid,
+.evo-home .evo-home-wrap>.evo-paths{
+  width:100%;
+}
